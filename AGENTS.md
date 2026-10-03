@@ -18,6 +18,9 @@ transitions, narration, or screen resets.
 ## Code and communication
 - Write detailed comments explaining adjustment points, units, dependencies,
   coordinate conversion, timing, and updater lifetimes.
+- Beside animation code, suggest a few relevant alternative Manim animations
+  and explain their effects and required imports. Do not apply alternatives
+  without a request. The user supplies small actions without needing unit IDs.
 - Keep physical time and coordinates separate from playback and screen units.
 - Use ordinary functions/classes and explicit imports. Avoid premature abstractions.
 - Each unit is an invisible part of one continuous Scene. No automatic cleanup,

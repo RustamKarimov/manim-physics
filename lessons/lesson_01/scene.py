@@ -11,9 +11,9 @@ from lessons.lesson_01.units import u01
 # they do not create on-screen titles or transitions.
 UNIT_REGISTRY = {"u01": u01.play}
 
-# The user determines this order. Leave it empty until a real action is supplied.
-# Once u01 contains that action, change this to ("u01",).
-UNIT_ORDER: tuple[str, ...] = ()
+# Opening action only for now. Further actions are added in the user's order.
+# These IDs are code organisation only; they introduce no visible boundaries.
+UNIT_ORDER: tuple[str, ...] = ("u01",)
 
 
 class Lesson01(Scene):

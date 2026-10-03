@@ -4,11 +4,11 @@ syllabus = "Cambridge 9702, 2025–2027"
 
 [lessons.L01]
 order = 1
-title = ""
-slug = "lesson_01"
+title = "Physical Quantities"
+slug = "physical_quantities"
 source = "lessons/lesson_01/scene.py"
 scene = "Lesson01"
-status = "scaffold"
+status = "in_progress"
 
 [lessons.L02]
 order = 2
