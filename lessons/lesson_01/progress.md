@@ -1,9 +1,10 @@
 # Lesson 01 — Physical Quantities
 
-- Current action: centred title appears with Write, holds for 2 seconds, then Unwrite removes it.
-- Adjustable defaults: Arial 64, white, 1.5-second writing and 1-second removal.
-- Implementation: units/u01.py; this is an internal file boundary only.
-- User workflow: small changes step by step, with no need to specify units.
-- Comments include alternative animations; use them only when the user chooses them.
-- Next action: awaiting the user's instruction.
+- Current action: introductory course heading above the user-edited chapter title.
+- Both lines appear with Write, hold for 2 seconds, then disappear with Unwrite.
+- User wording preserved: Chapter 1: Physical Quantities.
+- Settings: intro_settings.py; animation code: intro.py.
+- DejaVu Sans: title size 64, course heading size 36, white, gap 0.35 screen units.
+- The introduction is separate from teaching unit 1; no teaching units implemented yet.
+- User workflow: small changes step by step, with no need to specify unit IDs.
 - Rendering and visual review: performed by the user only.

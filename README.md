@@ -32,7 +32,8 @@ declared in `pyproject.toml` and resolved in `uv.lock`; no requirements.txt is n
 
 - `course.toml`: 25 reserved lesson IDs; add more when needed.
 - `lessons/lesson_01/scene.py`: one master Scene and the explicit unit order.
-- `lessons/lesson_01/units/u01.py`: detailed template awaiting your first action.
+- `lessons/lesson_01/intro.py`: opening animation, separate from teaching unit 1.
+- `lessons/lesson_01/intro_settings.py`: editable intro wording, layout and timing.
 - `lessons/lesson_01/state.py`: references carried between units.
 - `manim.cfg`: shared render settings, with explanatory comments.
 - `AGENTS.md`: editing, preservation, and no-render rules for future sessions.
@@ -48,7 +49,7 @@ uv run --locked python tools/render.py L01 --print-command
 The assistant never renders. Once you have implemented units, you may run:
 
 ```bash
-uv run --locked python tools/render.py L01 --unit u01 --profile preview
+uv run --locked python tools/render.py L01 --unit intro --profile preview
 uv run --locked python tools/render.py L01 --profile final
 ```
 

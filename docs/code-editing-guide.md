@@ -2,7 +2,16 @@
 
 ## Settings close to the action
 
-Each implementation should start with named settings and explain their effects.
+Small actions can keep a few named settings beside their code. As a section
+grows, place editable values in a separate settings file for that section,
+grouped by object or action and explained with comments. Do not extract every
+literal: expose values useful for adjustment or reused in linked calculations.
+Shared course-wide defaults belong in shared/style.py only when wanted.
+
+Lesson 1's introduction uses lessons/lesson_01/intro_settings.py for wording,
+font sizes, heading gap, positions and timing; intro.py contains the animation.
+The introduction is separate from the first teaching unit. Future longer units
+can use units/u01_settings.py beside units/u01.py, and similarly for other units.
 For example, a future requested action might expose BOX_WIDTH, RULER_OFFSET,
 and APPEAR_SECONDS. These are examples only; no box/ruler is currently created.
 
@@ -25,9 +34,10 @@ it is removed; leaving one active can change later actions unexpectedly.
 ## Playback order
 
 UNIT_REGISTRY maps stable unit IDs to functions. UNIT_ORDER is the exact ordered
-tuple of implemented IDs. For the first implemented unit use `("u01",)`; the
-comma is required for a one-element tuple. The template starts with an empty
-order so it cannot silently render invented content.
+tuple of implemented IDs. The current order is `("intro",)`; the comma is required for a one-element
+tuple. When teaching unit 1 is implemented, the order can be
+`("intro", "u01")`. Preview just the opening with
+`python tools/render.py L01 --unit intro --profile preview`.
 
 ## Your changes
 

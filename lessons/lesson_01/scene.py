@@ -5,15 +5,16 @@ import os
 from manim import Scene
 
 from lessons.lesson_01.state import LessonState
-from lessons.lesson_01.units import u01
+from lessons.lesson_01 import intro
 
 # Add implemented units to this registry. Keys are stable development IDs only:
 # they do not create on-screen titles or transitions.
-UNIT_REGISTRY = {"u01": u01.play}
+UNIT_REGISTRY = {"intro": intro.play}
 
-# Opening action only for now. Further actions are added in the user's order.
+# The introduction is separate from teaching unit 1. Add future actions in
+# the user's order; u01 is reserved for the first actual teaching unit.
 # These IDs are code organisation only; they introduce no visible boundaries.
-UNIT_ORDER: tuple[str, ...] = ("u01",)
+UNIT_ORDER: tuple[str, ...] = ("intro",)
 
 
 class Lesson01(Scene):

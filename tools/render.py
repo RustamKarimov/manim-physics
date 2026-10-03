@@ -18,8 +18,8 @@ def build_command(lesson_id: str, unit: str | None, profile: str) -> tuple[list[
     catalogue = tomllib.loads((ROOT / "course.toml").read_text(encoding="utf-8"))
     if lesson_id not in catalogue["lessons"]:
         raise ValueError(f"Unknown lesson: {lesson_id}")
-    if unit is not None and not re.fullmatch(r"u[0-9]{2,}", unit):
-        raise ValueError("Unit IDs must look like u01, u02, or u100.")
+    if unit is not None and not re.fullmatch(r"(?:intro|u[0-9]{2,})", unit):
+        raise ValueError("Use intro for the introduction, or unit IDs such as u01, u02, or u100.")
     entry = catalogue["lessons"][lesson_id]
     scene_file = ROOT / entry["source"]
     if not scene_file.is_file():
@@ -50,7 +50,7 @@ def build_command(lesson_id: str, unit: str | None, profile: str) -> tuple[list[
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("lesson", help="Catalogue ID, e.g. L01")
-    parser.add_argument("--unit", help="Preview one implemented unit, e.g. u01")
+    parser.add_argument("--unit", help="Preview the intro or one implemented unit, e.g. intro or u01")
     parser.add_argument("--profile", choices=PROFILES, default="preview")
     parser.add_argument("--print-command", action="store_true", help="Display the command; do not render")
     args = parser.parse_args()
