@@ -27,10 +27,10 @@ updaters are involved. Skipping does not substitute for visual verification.
 
 ## Git and OneDrive
 
-Keep a local source checkout on each computer, outside OneDrive. A private
-remote is not configured by this scaffold; choose your account/repository before
-connecting it. Git protects source history; OneDrive holds large shared assets
-and selected exports. No upload, push, or export is automated.
+Keep a local source checkout on each computer, outside OneDrive. The public
+remote is https://github.com/RustamKarimov/manim-physics. Git protects source
+history; OneDrive holds large shared assets and selected exports. See git-sync.md
+for cloning and switching computers. Uploads and exports are not automatic.
 
 Before switching computers: save, review the diff, commit, push, and wait for
 changed assets to sync. On the next computer, pull before editing and run

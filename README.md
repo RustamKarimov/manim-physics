@@ -6,17 +6,16 @@ No content, explanation, or transition is invented by the scaffold.
 
 ## Start in PyCharm
 
-This scaffold was created in your existing OneDrive folder. Before installing
-dependencies, copy the source project to a local folder OUTSIDE OneDrive, e.g.
-`~/Projects/manim-physics` on Mac or `C:/Users/YourName/Projects/manim-physics`
-on Windows. Open that local folder with **File → Open** in PyCharm.
+The working Mac project is `/Users/rustamkarimov/Projects/manim-physics`,
+outside OneDrive. Open this folder with **File → Open** in PyCharm.
 
-Include hidden files when copying. Leave `shared-assets/` and `exports/` in
-OneDrive rather than copying those two folders into the source checkout.
+On Windows, clone `https://github.com/RustamKarimov/manim-physics.git` into a
+local folder outside OneDrive, then open it in PyCharm. See
+[Git synchronization instructions](docs/git-sync.md).
 
-Keep the original OneDrive folder for `shared-assets` and selected `exports`.
-An ignored folder is still synchronized by OneDrive if physically inside it.
-Do not create `.venv`, `.idea`, or `build` in the synced source folder.
+Keep OneDrive for `shared-assets` and selected `exports`. Do not copy `.venv`,
+`.idea`, or `build` between computers. Each checkout has its own environment
+and `.local/settings.toml` paths. The old OneDrive source is a scaffold snapshot.
 
 Follow [macOS setup](docs/setup-macos.md) or [Windows setup](docs/setup-windows.md).
 After system prerequisites are ready, run in the LOCAL project terminal:
