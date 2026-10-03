@@ -1,0 +1,6 @@
+# Copy to settings.toml in this folder on EACH computer. That file is ignored.
+# Choose the local path to your OneDrive shared-assets folder. Use forward
+# slashes even on Windows, e.g. C:/Users/YourName/OneDrive/Manim Lessons/shared-assets.
+shared_assets = ""
+# Optional OneDrive destination for final files YOU choose to copy there.
+exports = ""

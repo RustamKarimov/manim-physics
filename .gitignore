@@ -1,0 +1,21 @@
+.venv/
+.idea/
+.local/*
+!.local/settings.example.toml
+build/
+shared-assets/
+exports/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+*.log
+
+# Keep credentials and local secrets out of this public repository.
+.env
+.env.*
+!.env.example
+*.pem
+*.key

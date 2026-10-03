@@ -1,0 +1,203 @@
+# Reserved IDs; titles and lesson content are supplied by the user.
+# IDs stay stable even if you change the display order or title.
+syllabus = "Cambridge 9702, 2025–2027"
+
+[lessons.L01]
+order = 1
+title = ""
+slug = "lesson_01"
+source = "lessons/lesson_01/scene.py"
+scene = "Lesson01"
+status = "scaffold"
+
+[lessons.L02]
+order = 2
+title = ""
+slug = "lesson_02"
+source = "lessons/lesson_02/scene.py"
+scene = "Lesson02"
+status = "reserved"
+
+[lessons.L03]
+order = 3
+title = ""
+slug = "lesson_03"
+source = "lessons/lesson_03/scene.py"
+scene = "Lesson03"
+status = "reserved"
+
+[lessons.L04]
+order = 4
+title = ""
+slug = "lesson_04"
+source = "lessons/lesson_04/scene.py"
+scene = "Lesson04"
+status = "reserved"
+
+[lessons.L05]
+order = 5
+title = ""
+slug = "lesson_05"
+source = "lessons/lesson_05/scene.py"
+scene = "Lesson05"
+status = "reserved"
+
+[lessons.L06]
+order = 6
+title = ""
+slug = "lesson_06"
+source = "lessons/lesson_06/scene.py"
+scene = "Lesson06"
+status = "reserved"
+
+[lessons.L07]
+order = 7
+title = ""
+slug = "lesson_07"
+source = "lessons/lesson_07/scene.py"
+scene = "Lesson07"
+status = "reserved"
+
+[lessons.L08]
+order = 8
+title = ""
+slug = "lesson_08"
+source = "lessons/lesson_08/scene.py"
+scene = "Lesson08"
+status = "reserved"
+
+[lessons.L09]
+order = 9
+title = ""
+slug = "lesson_09"
+source = "lessons/lesson_09/scene.py"
+scene = "Lesson09"
+status = "reserved"
+
+[lessons.L10]
+order = 10
+title = ""
+slug = "lesson_10"
+source = "lessons/lesson_10/scene.py"
+scene = "Lesson10"
+status = "reserved"
+
+[lessons.L11]
+order = 11
+title = ""
+slug = "lesson_11"
+source = "lessons/lesson_11/scene.py"
+scene = "Lesson11"
+status = "reserved"
+
+[lessons.L12]
+order = 12
+title = ""
+slug = "lesson_12"
+source = "lessons/lesson_12/scene.py"
+scene = "Lesson12"
+status = "reserved"
+
+[lessons.L13]
+order = 13
+title = ""
+slug = "lesson_13"
+source = "lessons/lesson_13/scene.py"
+scene = "Lesson13"
+status = "reserved"
+
+[lessons.L14]
+order = 14
+title = ""
+slug = "lesson_14"
+source = "lessons/lesson_14/scene.py"
+scene = "Lesson14"
+status = "reserved"
+
+[lessons.L15]
+order = 15
+title = ""
+slug = "lesson_15"
+source = "lessons/lesson_15/scene.py"
+scene = "Lesson15"
+status = "reserved"
+
+[lessons.L16]
+order = 16
+title = ""
+slug = "lesson_16"
+source = "lessons/lesson_16/scene.py"
+scene = "Lesson16"
+status = "reserved"
+
+[lessons.L17]
+order = 17
+title = ""
+slug = "lesson_17"
+source = "lessons/lesson_17/scene.py"
+scene = "Lesson17"
+status = "reserved"
+
+[lessons.L18]
+order = 18
+title = ""
+slug = "lesson_18"
+source = "lessons/lesson_18/scene.py"
+scene = "Lesson18"
+status = "reserved"
+
+[lessons.L19]
+order = 19
+title = ""
+slug = "lesson_19"
+source = "lessons/lesson_19/scene.py"
+scene = "Lesson19"
+status = "reserved"
+
+[lessons.L20]
+order = 20
+title = ""
+slug = "lesson_20"
+source = "lessons/lesson_20/scene.py"
+scene = "Lesson20"
+status = "reserved"
+
+[lessons.L21]
+order = 21
+title = ""
+slug = "lesson_21"
+source = "lessons/lesson_21/scene.py"
+scene = "Lesson21"
+status = "reserved"
+
+[lessons.L22]
+order = 22
+title = ""
+slug = "lesson_22"
+source = "lessons/lesson_22/scene.py"
+scene = "Lesson22"
+status = "reserved"
+
+[lessons.L23]
+order = 23
+title = ""
+slug = "lesson_23"
+source = "lessons/lesson_23/scene.py"
+scene = "Lesson23"
+status = "reserved"
+
+[lessons.L24]
+order = 24
+title = ""
+slug = "lesson_24"
+source = "lessons/lesson_24/scene.py"
+scene = "Lesson24"
+status = "reserved"
+
+[lessons.L25]
+order = 25
+title = ""
+slug = "lesson_25"
+source = "lessons/lesson_25/scene.py"
+scene = "Lesson25"
+status = "reserved"
