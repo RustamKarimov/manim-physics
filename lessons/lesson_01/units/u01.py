@@ -6,7 +6,7 @@ from lessons.lesson_01.state import LessonState
 
 # TITLE SETTINGS: edit these directly to adjust this opening action.
 TITLE_TEXT = "Physical Quantities"  # Exact wording visible to the audience.
-TITLE_FONT = "Arial"  # Installed on this Mac; use the same font on Windows.
+TITLE_FONT = "DejaVu Sans"  # Install this same font on Windows for matching text.
 TITLE_FONT_SIZE = 64  # Manim font size: larger numbers produce larger text.
 TITLE_COLOR = "#FFFFFF"  # White; change to a hex colour such as "#FFD54F".
 TITLE_POSITION = (0.0, 0.0, 0.0)  # Screen units: x right, y up; (0, 0, 0) centres it.
