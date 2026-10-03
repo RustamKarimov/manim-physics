@@ -57,3 +57,14 @@ The repository is public: do not add passwords, tokens, personal student data,
 or assets you cannot publish. .venv, .idea, build, local path settings, and large
 OneDrive folders are excluded. Git tracks code, comments, configuration, and
 manual adjustments. The assistant does not render.
+
+## Commit signing on this Mac
+
+The pre-existing global Git configuration attempted GPG signing, but its signer
+failed during setup. The initial project commit was made unsigned; global signing
+settings were left unchanged. If a later commit reports the same error, either
+repair your GPG signing setup or make that individual commit unsigned:
+
+```bash
+git -c commit.gpgsign=false commit -m "Describe the small change"
+```
