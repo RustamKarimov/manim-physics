@@ -30,7 +30,10 @@ def build_command(lesson_id: str, unit: str | None, profile: str) -> tuple[list[
     # Unique lesson/unit/profile paths prevent previews overwriting full videos.
     filename = f"{lesson_id}_{entry['slug']}" + (f"_{unit}" if unit else "")
     command = [
-        sys.executable, "-m", "manim", "--config_file", str(ROOT / "manim.cfg"),
+        # --preview opens the completed MP4 in the default video player on
+        # macOS/Windows. It does not change the selected quality profile.
+        # Remove this flag if you later want to render without opening playback.
+        sys.executable, "-m", "manim", "--preview", "--config_file", str(ROOT / "manim.cfg"),
         "--media_dir", str(output), "--resolution", f"{width},{height}",
         "--fps", str(fps), "--output_file", filename,
         str(scene_file), entry["scene"],

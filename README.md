@@ -52,8 +52,8 @@ uv run --locked python tools/render.py L01 --unit u01 --profile preview
 uv run --locked python tools/render.py L01 --profile final
 ```
 
-The empty scaffold deliberately refuses a real render until its unit order is
-populated. A printed command is informational, not proof a unit is implemented.
+Render commands open the completed video in your default player automatically.
+An empty unit order deliberately refuses a real render until an action is added. A printed command is informational, not proof a unit is implemented.
 Generated output stays under `build/<lesson>/<full-or-unit>/<profile>/`.
 
 See [workflow](docs/workflow.md) and [editing guide](docs/code-editing-guide.md).
